@@ -1,0 +1,58 @@
+@import "../components/btn-action.scss";
+@import "../components/product.scss";
+@import "../components/icons.scss";
+@import "../variables.scss";
+
+
+.listOfProducts {
+  padding: 15px 0 40px;
+  @media (min-width: 992px) {
+    padding: 50px 0 175px;
+  }
+  .productsWrapper {
+    padding: 15px 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    @media (min-width: 992px) {
+      padding: 50px 0 80px;
+    }
+  }
+  .searchWL {
+    margin-bottom: 50px;
+    input[type="search"] {
+      border: 1px $text-color solid;
+      border-right: none;
+      padding: 10px;
+      height: 40px;
+      width: 60%;
+      @media (min-width:768px) {
+        width: auto;
+      }
+    }
+    p {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  .pagination {
+    justify-content: center;
+    .num-link {
+      color: $text-color;
+      border: 2px #eeeeee solid;
+      border-radius: 0;
+      font-weight: bold;
+      width: 40px;
+    }
+    .page-link.active {
+      color: $red;
+      border: $black-border;
+      background-color: #fff;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+

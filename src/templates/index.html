@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/app.css" type="text/css">
+</head>
+<body>
+<main class="main-wrapper">
+    <header>
+        <div class="container">
+            <a href="#" title="CodeIT Store">
+                <div class="logo">
+                    <h1>Code<span>it</span></h1>
+                    <p>store</p>
+                </div>
+            </a>
+
+            <div class="right-side-header">
+                <input id="burger-menu" type="checkbox"/>
+                <label for="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="" id="allbrands">all brands <i class="fas fa-angle-down"></i></a>
+                            <ul class="hidden-brandList">
+                                <li><a href="#">brand1</a></li>
+                                <li><a href="#">brand2</a></li>
+                                <li><a href="#">brand3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">latest</a></li>
+                        <li><a href="">featured</a></li>
+                        <li><a href="">about</a></li>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+
+                </nav>
+                <button class="searcnSite"><i class="fas fa-search"></i></button>
+                <input type="search" name="searchSite" placeholder="Search" class="hiddenSearch">
+                <a href="#">
+                    <div class="card card-wrap">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="countPrice">$460</span>
+                        <span class="countProduct">2</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="myWishlist">
+        <div class="topMyWishList">
+            <div class="container">
+                <h2>My Wishlist</h2>
+                <ul>
+                    <li>Home ></li>
+                    <li>Wishlist</li>
+                </ul>
+            </div>
+        </div>
+        <div class="listOfProducts">
+            <div class="container">
+                <div class="searchWL">
+                    <form>
+                        <p><input type="search" name="search" placeholder="Search">
+                            <input type="submit" id="clear-list" class="btn-action" value="Clear List">
+                        </p>
+                    </form>
+                </div>
+                <div class="productsWrapper">
+
+                </div>
+
+                <nav aria-label="...">
+                    <ul class="pagination">
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <div class="owl-carousel owl-theme advantages-slider">
+                <div class="item-advantages">
+                    <div class="icon-advantage">
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <div class="item-text-wrap">
+                        <h2>Full warrenty</h2>
+                        <p>Read About Our Warrenty</p>
+                    </div>
+                </div>
+                <div class="item-advantages">
+                    <div class="icon-advantage">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="item-text-wrap">
+                        <h2>express shipping</h2>
+                        <p>Local & International Shipping</p>
+                    </div>
+                </div>
+                <div class="item-advantages">
+                    <div class="icon-advantage">
+                        <i class="fab fa-rocketchat"></i>
+                    </div>
+                    <div class="item-text-wrap">
+                        <h2>mobile blog</h2>
+                        <p>Discuss Your Favourite Phone</p>
+                    </div>
+                </div>
+                <div class="item-advantages">
+                    <div class="icon-advantage">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <div class="item-text-wrap">
+                        <h2>24/7 Support</h2>
+                        <p>Get Full Support via Chat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts-links">
+        <div class="container">
+            <h2>subscribe to latest smartphones
+                news & great deals we offer</h2>
+            <form>
+                <input type="email" name="email" placeholder="Enter Your Email Address ...">
+                <i class="far fa-envelope"></i>
+            </form>
+            <div class="icons-block">
+                <a href="#">
+                    <div class="icon"><i class="fab fa-twitter"></i></div>
+                </a>
+                <a href="#">
+                    <div class="icon"><i class="fab fa-facebook-f"></i></div>
+                </a>
+                <a href="#">
+                    <div class="icon"><i class="fab fa-linkedin-in"></i></div>
+                </a>
+                <a href="#">
+                    <div class="icon"><i class="fab fa-google-plus-g"></i></div>
+                </a>
+                <a href="#">
+                    <div class="icon"><i class="fab fa-pinterest-p"></i></div>
+                </a>
+                <a href="#">
+                    <div class="icon"><i class="fab fa-youtube"></i></div>
+                </a>
+                <a href="#">
+                    <div class="icon"><i class="fas fa-rss"></i></div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <h2>Copyright &copy; 2015 <span>codeitStore</span> All Rights Reserved.</h2>
+
+            <div class="paySystem">
+                <div class="pay-card">
+                    <img src="./images/card1.png" alt="visa electron">
+                </div>
+                <div class="pay-card">
+                    <img src="./images/card2.png" alt="paypal">
+                </div>
+                <div class="pay-card">
+                    <img src="./images/card3.png" alt="visa">
+                </div>
+                <div class="pay-card">
+                    <img src="./images/card4.png" alt="mastercard">
+                </div>
+                <div class="pay-card">
+                    <img src="./images/card5.png" alt="maestro">
+                </div>
+                <div class="pay-card">
+                    <img src="./images/card6.png" alt="discover">
+                </div>
+            </div>
+        </div>
+    </footer>
+</main>
+<script type="application/javascript" src="./js/app.js"></script>
+</body>
+
+
+</html>

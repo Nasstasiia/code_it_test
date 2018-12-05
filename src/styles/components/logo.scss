@@ -1,0 +1,33 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.logo {
+  color: $text-color;
+
+  h1 {
+    font-size: 26px;
+    color: $red;
+    position: relative;
+
+    span {
+      color: $text-color;
+      text-transform: uppercase;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      @include underline;
+
+    }
+  }
+
+  p {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    padding-top: 5px;
+  }
+}

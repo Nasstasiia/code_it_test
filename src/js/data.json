@@ -1,0 +1,184 @@
+[
+  {
+    "id": 0,
+    "image": "../images/huawei.png",
+    "name": "HUAWEI MATE S",
+    "price": 280,
+    "oldPrice": null
+  },
+  {
+    "id": 1,
+    "image": "../images/sony.png",
+    "name": "SONY XPERIA Z5",
+    "price": 550,
+    "oldPrice": null
+  },
+  {
+    "id": 2,
+    "image": "../images/xiaomi.png",
+    "name": "Xiaomi Mi 4i",
+    "price": 350,
+    "oldPrice": null
+  },
+  {
+    "id": 3,
+    "image": "../images/huawei g8.png",
+    "name": "HUAWEI G8 4G",
+    "price": 350,
+    "oldPrice": null
+  },
+  {
+    "id": 4,
+    "image": "../images/iphone.png",
+    "name": "iPhone Rose Gold",
+    "price": 280,
+    "oldPrice": 649
+  },
+  {
+    "id": 5,
+    "image": "../images/huawei g8.png",
+    "name": "HUAWEI G8 4G",
+    "price": 350,
+    "oldPrice": null
+  },
+  {
+    "id": 6,
+    "image": "../images/galaxy.png",
+    "name": "Galaxy Core Prime",
+    "price": 399,
+    "oldPrice": null
+  },
+  {
+    "id": 7,
+    "image": "../images/apple.png",
+    "name": "Apple iPhone 6S",
+    "price": 550,
+    "oldPrice": null
+  },
+  {
+    "id": 8,
+    "image": "../images/huawei.png",
+    "name": "HUAWEI MATE S",
+    "price": 280,
+    "oldPrice": null
+  },
+  {
+    "id": 9,
+    "image": "../images/sony.png",
+    "name": "SONY XPERIA Z5",
+    "price": 550,
+    "oldPrice": null
+  },
+  {
+    "id": 10,
+    "image": "../images/xiaomi.png",
+    "name": "Xiaomi Mi 4i",
+    "price": 350,
+    "oldPrice": null
+  },
+  {
+    "id": 11,
+    "image": "../images/huawei g8.png",
+    "name": "HUAWEI G8 4G",
+    "price": 350,
+    "oldPrice": null
+  },
+  {
+    "id": 12,
+    "image": "../images/iphone.png",
+    "name": "iPhone Rose Gold",
+    "price": 280,
+    "oldPrice": null
+  },
+  {
+    "id": 13,
+    "image": "../images/huawei g8.png",
+    "name": "HUAWEI G8 4G",
+    "price": 350,
+    "oldPrice": null
+  },
+  {
+    "id": 14,
+    "image": "../images/huawei g8.png",
+    "name": "HUAWEI G8 4G",
+    "price": 350,
+    "oldPrice": null
+  },
+  {
+    "id": 15,
+    "image": "../images/galaxy.png",
+    "name": "Galaxy Core Prime",
+    "price": 399,
+    "oldPrice": null
+  },
+  {
+    "id": 16,
+    "image": "../images/apple.png",
+    "name": "Apple iPhone 6S",
+    "price": 550,
+    "oldPrice": null
+  },
+  {
+    "id": 17,
+    "image": "../images/huawei.png",
+    "name": "HUAWEI MATE S",
+    "price": 280,
+    "oldPrice": null
+  },
+  {
+    "id": 18,
+    "image": "../images/sony.png",
+    "name": "SONY XPERIA Z5",
+    "price": 550,
+    "oldPrice": null
+  },
+  {
+    "id": 19,
+    "image": "../images/xiaomi.png",
+    "name": "Xiaomi Mi 4i",
+    "price": 350,
+    "oldPrice": null
+  },
+  {
+    "id": 20,
+    "image": "../images/huawei g8.png",
+    "name": "HUAWEI G8 4G",
+    "price": 350,
+    "oldPrice": null
+  },
+  {
+    "id": 21,
+    "image": "../images/iphone.png",
+    "name": "iPhone Rose Gold",
+    "price": 280,
+    "oldPrice": null
+  },
+  {
+    "id": 22,
+    "image": "../images/huawei g8.png",
+    "name": "HUAWEI G8 4G",
+    "price": 350,
+    "oldPrice": null
+  },
+  {
+    "id": 23,
+    "image": "../images/huawei g8.png",
+    "name": "HUAWEI G8 4G",
+    "price": 350,
+    "oldPrice": null
+  },
+  {
+    "id": 24,
+    "image": "../images/galaxy.png",
+    "name": "Galaxy Core Prime",
+    "price": 399,
+    "oldPrice": null
+  },
+  {
+    "id": 25,
+    "image": "../images/apple.png",
+    "name": "Apple iPhone 6S",
+    "price": 550,
+    "oldPrice": null
+  }
+]

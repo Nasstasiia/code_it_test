@@ -1,0 +1,90 @@
+	@import "../variables.scss";
+	@import "../mixins.scss";
+
+	.itemProduct {
+		padding-left: 0!important;
+		padding-right: 0!important;
+		text-align: center;
+		border: $grey-border;
+		transition: $transition;
+		position: relative;
+		max-width: 95%;
+		margin: 10px auto;
+		@media (min-width: 992px) {
+			max-width: 23%;
+		}
+		.img-wrapper {
+			width: 100%;
+			padding-top: 30px;
+			min-height: 250px;
+			position: relative;
+			img {
+				max-width: 100%;
+				position: relative;
+				z-index: -2;
+			}
+			&:after {
+				content: "";
+				@include underline;
+				display: block;
+				position: absolute;
+				left: 50%;
+				margin-left: -4px;
+				bottom: 10px;
+			}
+		}
+		.title-item {
+			@include upperCase;
+			color: $text-color;
+			padding-top: 20px;
+			font-size: 14px;
+		}
+		.price-item {
+			@include upperCase;
+			color: $red;
+			padding-top: 10px;
+			font-size: 14px;
+			display: inline-block;
+		}
+		.old-price {
+			color: #888888;
+		}
+		.icons-block {
+			padding-top: 25px;
+		}
+		.removeItem {
+			display: none;
+		}
+		&:hover {
+			.desc-item {
+				background: rgba(0,0,0, 0.1);
+			}
+			.img-wrapper {
+				background: rgba(0,0,0, 0.8);
+				&:after {
+					display: none;
+				}
+			}
+			.removeItem {
+				@include upperCase;
+				display: block;
+				text-align: center;
+				position: absolute;
+				top: 50%;
+				margin-top: -62px;
+				left: 50%;
+				margin-left: -100px;
+				text-transform: uppercase;
+				border: 1px #fff solid;
+				color: #fff;
+				padding: 10px 20px;
+				&:hover {
+					background: rgba(255, 255, 255, 0.8);
+					color: $text-color;
+					cursor: pointer;
+					transition: $transition;
+				}
+
+			}
+		}
+	}	

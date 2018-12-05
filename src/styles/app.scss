@@ -1,0 +1,13 @@
+@import "libs/font-awesome";
+@import "libs/bootstrap";
+@import "variables.scss";
+@import "fonts.scss";
+@import "sections/header.scss";
+@import "sections/topWishList.scss";
+@import "sections/listOfProducts.scss";
+@import "sections/advantages.scss";
+@import "sections/footer.scss";
+
+
+@import "../../node_modules/owl.carousel/src/scss/owl.theme.default.scss";
+@import "../../node_modules/owl.carousel/src/scss/owl.carousel.scss";

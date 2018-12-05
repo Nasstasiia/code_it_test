@@ -1,0 +1,44 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.topMyWishList {
+  background: url("../../images/bg-my_wishlist.png");
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 128px;
+  @media (min-width: 992px) {
+    margin-top: auto;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    @media (min-width: 768px) {
+     height: 150px;
+    }
+  }
+  h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    @media (min-width: 992px) {
+     font-size: 26px;
+    }
+  }
+  li {
+    list-style: none;
+    display: inline-block;
+    color: $text-color;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    &:first-child {
+      font-weight: bold;
+    }
+    @media (min-width: 768px) {
+      font-size: 12px;
+    }
+  }
+
+}

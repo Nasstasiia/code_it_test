@@ -1,0 +1,74 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.advantages {
+  .container {
+    border: $black-border;
+    border-top: none;
+    height: 120px;
+    padding: 28px 40px 0 40px;
+    width: 90%;
+    position: relative;
+    @media (min-width: 768px){
+      width: 100%;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 2px;
+      background: #000;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 20px;
+      height: 2px;
+      background: #000;
+    }
+    .advantages-slider .owl-dots {
+      display: none;
+    } 
+    .item-advantages {
+      display: flex;
+      align-items: end;
+      justify-content: space-around;
+      @media (min-width: 768px){
+        justify-content: space-between;
+      }
+      .icon-advantage {
+        i {
+          font-size: 32px;
+          color: $text-color;
+        }
+      }
+      .item-text-wrap {
+        h2 {
+          @include upperCase;
+          font-size: 16px;
+          @media (min-width: 768px){
+            font-size: 13px;
+            padding-bottom: 5px;
+          }
+          @media (min-width: 992px){
+            font-size: 16px;
+          }
+        }
+        p {
+          font-size: 12px;
+        }
+        &:after {
+          content: "";
+          @include underline;
+          background: #cccccc;
+          display: block;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
