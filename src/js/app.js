@@ -1,31 +1,34 @@
 const ITEMS_PER_PAGE = 8;
 
+const model = {
+    products: [],
+    currentPage: 1
+};
+
 const $search = $("input[name=search]");
-let products = [];
-let currentPage = 1;
+
 
 $.getJSON("./data.json", data => {
-    products = data;
-    processPage(products, currentPage);
+    model.products = data;
+    processPage(model.products, model.currentPage);
 });
 
 $search.on("keyup paste change", (event) => {
     let search = event.target.value;
     search = search.toLowerCase();
-
-    let filteredProducts = products.filter((product) => {
+    let filteredproducts = model.products.filter((product) => {
         let name = product.name.toLowerCase();
-        return name.includes(search)
+        return name.includes(search);
     });
-    currentPage = 1;
-    processPage(filteredProducts, currentPage);
+    model.currentPage = 1;
+    processPage(filteredproducts, model.currentPage);
 });
 
 $("#clear-list").on("click", (ev) => {
     ev.preventDefault();
     $search.val("");
-    currentPage = 1;
-    processPage(products, currentPage);
+    model.currentPage = 1;
+    processPage(model.products, model.currentPage);
 });
 
 function processPage(products, currentPage) {
@@ -33,11 +36,11 @@ function processPage(products, currentPage) {
     createPagination(products, currentPage);
 }
 
-function updateListItems(products, currentPage) {
+function updateListItems(productList, currentPage) {
     function getItem({image, name, price, oldPrice, id}) {
         return $(`<div class="col-md-3 itemProduct">  
             <div class="img-wrapper">
-                <img src="${image}" alt="huawei">
+                <img src="${image}" alt="${name}">
             </div>
             <button class="removeItem">Remove from list</button>
             <div class="desc-item">
@@ -48,7 +51,7 @@ function updateListItems(products, currentPage) {
                     <button class="icon delete-cart"><i class="fas fa-trash-alt"></i></button>
                     <button class="icon add-cart"><i class="fas fa-shopping-cart"></i></button>
                 </div>
-                <input type="hidden" id=${id} name="custId" value=${id}>
+                <input type="hidden" name="custId" value=${id}>
             </div>
         </div>`);
     }
@@ -56,36 +59,44 @@ function updateListItems(products, currentPage) {
     const $container = $(".productsWrapper");
     let $list = $();
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+
     const endIndex = startIndex + ITEMS_PER_PAGE;
-    products.forEach((elem, i) => {
+    productList.forEach((elem, i) => {
         if (i >= startIndex && i < endIndex) {
             const $item = getItem(elem);
+
             $list = $list.add($item);
         }
     });
     $container.empty().append($list);
+
+    subscribeList();
+
+}
+
+function subscribeList() {
     $(".removeItem, .delete-cart").click(ev => {
         const $item = $(ev.target).closest(".itemProduct");
         const idItem = +$item.find("input:hidden").val();
-        products = products.filter((elem) => {
+        model.products = model.products.filter((elem) => {
             return elem.id !== idItem;
         });
 
-        let maxPage = getMaxPage(products);
-        if(currentPage > maxPage) {
-            currentPage = maxPage;
+        let maxPage = getMaxPage(model.products);
+        if (model.currentPage > maxPage) {
+            model.currentPage = maxPage;
         }
 
-        processPage(products, currentPage);
+        processPage(model.products, model.currentPage);
     });
 }
+
 
 function createPagination(products, currentPage) {
     function createPaginationItem(num) {
         let itemClass = "page-link num-link";
-
         if (num === currentPage) {
-            itemClass += " active";
+            itemClass+= " active";
         }
         return $(`<li class="page-item num-page">
                             <a class="${itemClass}" href="#">${num}</a>
@@ -95,7 +106,7 @@ function createPagination(products, currentPage) {
     const $pagContainer = $(".pagination");
 
     let $listPagination = $();
-    const totalPage = getMaxPage(products);
+    const totalPage = getMaxPage(model.products);
     for (let i = 1; i <= totalPage; i++) {
         const $itemPagination = createPaginationItem(i);
         $listPagination = $listPagination.add($itemPagination);

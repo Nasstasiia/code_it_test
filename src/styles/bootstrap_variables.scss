@@ -15,8 +15,13 @@ a:focus {
 button, input {
   border: none;
   background: transparent;
+  -webkit-border-radius: 0;
 }
 
 button:focus, input:focus {
 	outline: none;
+}
+
+input:invalid {
+  border-color: red!important;
 }
